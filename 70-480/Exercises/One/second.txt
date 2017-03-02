@@ -1,0 +1,11 @@
+<html>
+<body>
+<header>
+<h1>Some fictional company Website</h1>
+</header>
+<article>
+<header>
+<h1>Our first new Article</h1>
+</header>
+</body>
+</html>

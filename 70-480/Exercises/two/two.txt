@@ -1,0 +1,13 @@
+ute of the HTML element. Look at the following HTML sample:
+<html>
+<head>
+<script>
+function onloadHandler() {
+alert("hello event.");
+}
+</script>
+</head>
+<body onload="onloadHandler();">
+…
+</body>
+</html>

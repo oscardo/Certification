@@ -1,0 +1,153 @@
+<!-- <html> -->
+<!-- <head> -->
+<!-- <script> -->
+
+<!-- <!-- function onloadHandler() { --> -->
+	<!-- <!-- alert("hello event."); --> -->
+<!-- <!-- } --> -->
+
+<!-- <!-- window.onload = function () { --> -->
+
+<!-- <!-- window.addEventListener("load",function () { document.getElementById("outer").addEventListener("click", outerDivClick, false);}, false); --> -->
+
+<!-- <!-- window.addEventListener("load", --> -->
+<!-- <!-- function () { --> -->
+<!-- <!-- document.getElementById("outer").addEventListener("click", outerDivClick, false);}, --> -->
+<!-- <!-- false); --> -->
+
+<!-- <!-- window.removeEventListener("load", --> -->
+<!-- <!-- function () { --> -->
+<!-- <!-- document.getElementById("outer").addEventListener("click", outerDivClick, false); }, --> -->
+<!-- <!-- false); --> -->
+
+<!-- <!-- } --> -->
+
+<!-- window.onload = function () { -->
+<!-- var a = document.getElementById("aLink"); -->
+<!-- a.onclick = OverrideAnchorClick; -->
+<!-- } -->
+<!-- function OverrideAnchorClick() { -->
+<!-- //do custom logic for the anchor -->
+<!-- window.event.returnValue = false; -->
+<!-- //or -->
+<!-- //return false; -->
+<!-- } -->
+
+<!-- </script> -->
+<!-- </head> -->
+<!-- <body onload="onloadHandler();"> -->
+<!-- … -->
+<!-- </body> -->
+<!-- </html> -->
+
+
+
+<!-- <html> -->
+<!-- <style> -->
+<!-- #outer { -->
+<!-- width: 200px; -->
+<!-- height: 200px; -->
+<!-- background-color: red; -->
+<!-- } -->
+<!-- #middle { -->
+<!-- width: 50%; -->
+<!-- height: 50%; -->
+<!-- position: relative; -->
+<!-- top: 25%; -->
+<!-- left: 25%; -->
+<!-- background-color: green; -->
+<!-- } -->
+<!-- #inner { -->
+<!-- width: 50%; -->
+<!-- height: 50%; -->
+<!-- position: relative; -->
+<!-- top: 25%; -->
+<!-- left: 25%; -->
+<!-- background-color: blue; -->
+<!-- } -->
+<!-- </style> -->
+<!-- <script> -->
+<!-- window.onload = function () { -->
+<!-- document.getElementById("outer").addEventListener("click", outerDivClick, false); -->
+<!-- document.getElementById("middle").addEventListener("click", middleDivClick, false); -->
+<!-- document.getElementById("inner").addEventListener("click", innerDivClick, false); -->
+<!-- document.getElementById("clearButton").addEventListener("click", clearList); -->
+<!-- } -->
+<!-- function outerDivClick() { -->
+<!-- appendText("outer Div Clicked"); -->
+<!-- } -->
+<!-- function middleDivClick() { -->
+<!-- appendText("middle Div Clicked"); -->
+<!-- } -->
+<!-- function innerDivClick() { -->
+<!-- appendText("inner Div Clicked"); -->
+<!-- } -->
+<!-- function appendText(s) { -->
+<!-- var li = document.createElement("li"); -->
+<!-- li.innerText = s; -->
+<!-- document.getElementById("eventOrder").appendChild(li); -->
+<!-- } -->
+<!-- function clearList() { -->
+<!-- var ol = document.createElement("ol"); -->
+<!-- ol.id = "eventOrder"; -->
+<!-- document.getElementById("bod").replaceChild(ol,document. -->
+<!-- getElementById("eventOrder")); -->
+<!-- } -->
+<!-- </script> -->
+<!-- <body id="bod"> -->
+<!-- <div id="outer"> -->
+<!-- <div id="middle" > -->
+<!-- <div id="inner"> -->
+<!-- </div> -->
+<!-- </div> -->
+<!-- </div> -->
+<!-- <ol id="eventOrder"> </ol> -->
+<!-- <button type="button" id="clearButton">Clear</button> -->
+<!-- </body> -->
+<!-- </html> -->
+
+<html>
+<script>
+
+<!-- window.onload = function () { -->
+<!-- document.getElementById("aRange").addEventListener("change", rangeChangeEvent); -->
+<!-- } -->
+<!-- function rangeChangeEvent() { -->
+<!-- document.getElementById("rangeValue").innerText = this.value; -->
+<!-- } -->
+
+<!-- document.onkeydown = function () { -->
+<!-- if (window.event.ctrlKey && String.fromCharCode(window.event.keyCode) == 'V') -->
+<!-- document.getElementById("firstNameText").focus(); -->
+<!-- if (window.event.ctrlKey && String.fromCharCode(window.event.keyCode) == 'M') -->
+<!-- document.getElementById("lastNameText").focus(); -->
+<!-- return false; -->
+<!-- } -->
+
+
+</script>
+<body>
+
+<script>
+
+window.onload = function () {
+	document.getElementById("yellowBox").addEventListener("click", yellowBoxClick);
+}
+
+function yellowBoxClick() {
+document.write("Client X: " + window.event.clientX + " ClientY: " + window.event.clientY);
+document.write("<BR />");
+document.write("offsetX: " + window.event.offsetX + " offsetY: " + window.event.offsetY);
+document.write("<BR />");
+document.write("screen X: " + window.event.screenX + " screenY: " + window.event.screenY);
+}
+</script>
+
+<!-- firstNameText: <input id="firstNameText" type="text" /> -->
+<!-- <br /> -->
+<!-- lastNameText:  <input id="lastNameTex" type="text" /> -->
+<!-- <input id="aRange" type="range" max="2000" min="0" value="0"/> -->
+<!-- <div id="rangeValue"></div> -->
+
+</body>
+</html>

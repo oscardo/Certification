@@ -1,0 +1,115 @@
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8"/>
+<style>
+div {
+width: 100px;
+height: 100px;
+border: 3px solid black;
+}
+</style>
+<script>
+<!-- var txt = "my long string"; -->
+<!-- var num = 5; -->
+
+<!-- var index = txt.indexOf("long",0); -->
+<!-- alert('Index of ' + index); -->
+<!-- var exp = num.toExponential(2); -->
+<!-- alert('Exponential ' + exp); -->
+
+<!-- var txt = new String("Oscar Ortiz"); -->
+<!-- var num = new Number(2); -->
+
+<!-- alert('txt  ' + txt); -->
+<!-- alert('num ' + num); -->
+
+<!-- var book = { -->
+<!-- ISBN: "55555555", -->
+<!-- Length: 560, -->
+<!-- genre: "programming", -->
+<!-- covering: "soft", -->
+<!-- author: "John Doe", -->
+<!-- currentPage: 5, -->
+<!-- title: "My Big Book of Wonderful Things", -->
+<!-- flipTo: function flipToAPage(pNum) { -->
+	<!-- this.currentPage = pNum; -->
+<!-- }, -->
+<!-- turnPageForward: function turnForward() { -->
+	<!-- this.flipTo(this.currentPage++); -->
+<!-- }, -->
+<!-- turnPageBackward: function turnBackward() { -->
+	<!-- this.flipTo(this.currentPage--); -->
+<!-- } -->
+<!-- } -->
+
+<!-- <!-- alert('book  ' + book); --> -->
+<!-- <!-- alert('book  ' + book.author); --> -->
+
+<!-- //This line throws an exception because the object does not support this method -->
+<!-- book.FlipToAPage(15); -->
+<!-- //alert('book  ' + book.FlipToAPage(15)); -->
+
+<!-- //This line works because this is what the method has been named. -->
+<!-- book.flipTo(15); -->
+<!-- //alert('book  ' + book.flipTo(15)); -->
+
+<!-- function Book() { -->
+<!-- this.ISBN = "55555555"; -->
+<!-- this.Length = 560; -->
+<!-- this.genre= "programming"; -->
+<!-- this.covering = "soft"; -->
+<!-- this.author = "John Doe"; -->
+<!-- this.currentPage = 5, -->
+<!-- this.flipTo = function FlipToAPage(pNum) { -->
+<!-- this.currentPage = pNum; -->
+<!-- }, -->
+<!-- this.turnPageForward = function turnForward() { -->
+<!-- this.flipTo(this.currentPage++); -->
+<!-- }, -->
+<!-- this.turnPageBackward = function turnBackward() { -->
+<!-- this.flipTo(this.currentPage--); -->
+<!-- } -->
+<!-- } -->
+<!-- var books = new Array(new Book(), new Book(), new Book()); -->
+<!-- books[0].Length -->
+
+<!-- var book = { ISBN: "55555555", Length: 560, genre: "programming", covering: "soft", author: "John Doe", currentPage: 5, title: "My Big Book of Wonderful Things", flipTo: function flipToAPage(pNum) {this.currentPage = pNum; }, turnPageForward: function turnForward() { this.flipTo(this.currentPage++); }, turnPageBackward: function turnBackward() { this.flipTo(this.currentPage--); } } -->
+
+function Book()
+{
+//just creates an empty book.
+}
+function Book(title, length, author) {
+this.title = title;
+this.Length = length;
+this.author = author;
+}
+Book.prototype = {
+ISBN: "",
+Length: -1,
+genre: "",
+covering: "",
+author: "",
+currentPage: 0,
+title: "",
+flipTo: function FlipToAPage(pNum) {
+this.currentPage = pNum;
+},
+turnPageForward: function turnForward() {
+this.flipTo(this.currentPage++);
+},
+turnPageBackward: function turnBackward() {
+this.flipTo(this.currentPage--);
+}
+};
+var books = new Array(new Book(), new Book("First Edition",350,"Random"));
+
+
+</script>
+</head>
+<body>
+<div id="Div1">DIV  1</div>
+<div id="Div2">DIV  2</div>
+<div id="Div3">DIV  3</div>
+</body>
+</html>

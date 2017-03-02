@@ -1,0 +1,205 @@
+<html>
+<script>
+<!-- var userAge = prompt("Age", " "); -->
+<!-- var gender = prompt("gender", " "); -->
+
+//var userAge = 10, gender = 'M';
+<!-- var minimumAge = 11; -->
+<!-- if (userAge > minimumAge) { -->
+<!-- if (gender == 'M') { -->
+<!-- //do logic for above age male -->
+ <!-- alert('Hombre'); -->
+<!-- } -->
+<!-- else { -->
+<!-- //do logic for above age female. -->
+ <!-- alert('Mujer'); -->
+<!-- } -->
+<!-- } else if (gender == 'M') { -->
+<!-- //do logic for underage male -->
+ <!-- alert('Nino'); -->
+<!-- } else { -->
+<!-- //do logic for underage female. -->
+ <!-- alert('Nina'); -->
+<!-- } -->
+
+
+<!-- switch (canvas.style.backgroundColor) { -->
+<!-- case 'yellow': -->
+<!-- case 'green': -->
+<!-- alert('proceed'); -->
+<!-- break; -->
+<!-- case 'red': -->
+<!-- alert('stop'); -->
+<!-- break; -->
+<!-- default: -->
+<!-- alert('unknown condition'); -->
+<!-- break; -->
+<!-- } -->
+
+<!-- var anArray = new Array(5); -->
+<!-- alert(anArray.length); -->
+<!-- anArray[9] = 'soccer'; -->
+<!-- alert(anArray.length); -->
+
+<!-- for(var i = 0; i <= anArray.length;i++) -->
+<!-- { -->
+	<!-- alert("Valor: " + anArray[i] + " Numero: " + i); -->
+<!-- } -->
+<!-- alert(anArray[9]); -->
+
+<!-- alert(anArray[11]); -->
+
+<!-- var multiArray = new Array(3); -->
+<!-- multiArray[0] = new Array(3); -->
+<!-- multiArray[1] = new Array(3); -->
+<!-- multiArray[2] = new Array(3); -->
+
+<!-- var anArray = new Array(5); -->
+<!-- alert(anArray.length); -->
+
+<!-- var sports = new Array( 'football ', 'cricket ', 'rugby ', 'tennis ', 'badminton '); -->
+<!-- var moreSports = new Array(' soccer', ' basketball', ' hockey'); -->
+<!-- var combinedSports = sports.concat(moreSports); -->
+<!-- alert(combinedSports); -->
+
+<!-- var sports = new Array('soccer', 'basketball', 'hockey', 'football', 'cricket', 'rugby','tennis', 'badminton'); -->
+<!-- var index = sports.indexOf('football', 0); -->
+<!-- alert(index); -->
+
+<!-- var sports = new Array('soccer', 'basketball', 'hockey', 'cricket', 'football', 'rugby','tennis', 'badminton'); -->
+<!-- var index = sports.lastIndexOf('football', sports.length); -->
+<!-- alert('lastIndexOf: ' + index); -->
+
+
+<!-- var sports = new Array('soccer', 'basketball', 'hockey', 'football', 'cricket', 'rugby','tennis', 'badminton'); -->
+<!-- var joined = sports.join(':->:'); -->
+<!-- alert(joined); -->
+
+<!-- var sports = new Array('soccer', 'basketball', 'hockey', 'football', 'cricket', 'rugby','tennis', 'badminton'); -->
+<!-- alert(sports.reverse()); -->
+
+<!-- var sports = new Array('soccer', 'basketball', 'hockey', 'football', 'cricket', 'rugby','tennis', 'badminton'); -->
+<!-- alert(sports.indexOf('soccer')); -->
+<!-- sports.sort(); -->
+<!-- alert(sports.indexOf('soccer')); -->
+
+<!-- var sports = new Array('soccer', 'basketball', 'hockey', 'football', 'cricket', 'rugby', -->
+<!-- 'tennis', 'badminton'); -->
+<!-- var someSports = sports.slice(1, 2); -->
+<!-- alert(someSports); -->
+
+<!-- var sports = new Array('soccer', 'basketball', 'hockey', 'football', 'cricket', 'rugby','tennis', 'badminton'); -->
+<!-- var splicedItems = sports.splice(2, 3, 'golf', 'curling', 'darts'); -->
+<!-- alert('splicedItems: ' + splicedItems); -->
+<!-- alert('sports :' + ports); -->
+
+<!-- var sports = new Array(); -->
+<!-- sports.push('soccer', 'basketball', 'hockey'); -->
+<!-- sports.push('football'); -->
+<!-- var nextSport = sports.pop(); -->
+<!-- alert(nextSport); -->
+
+<!-- var sports = new Array(); -->
+<!-- sports.unshift('soccer', 'basketball', 'hockey'); -->
+<!-- sports.unshift('football'); -->
+<!-- sports.unshift('tejo'); -->
+<!-- var nextSport = sports.shift(); -->
+<!-- alert(nextSport); -->
+
+<!-- var sports = new Array(); -->
+<!-- sports.push('soccer'); -->
+<!-- sports.push('basketball'); -->
+<!-- sports.push('hockey'); -->
+<!-- var get1 = sports.shift(); -->
+<!-- alert('First ' + sports.length); -->
+<!-- alert('1. sports.shift: ' + get1); -->
+<!-- var get1 = sports.pop(); -->
+<!-- alert('1. sports.pop: ' + get1); -->
+
+<!-- sports.push('golf'); -->
+<!-- alert('Second ' + sports.length); -->
+<!-- var get2 = sports.shift(); -->
+<!-- alert('2. sports.shift: ' + get2); -->
+<!-- var get2 = sports.pop(); -->
+<!-- alert('2. sports.pop: ' + get2); -->
+<!-- alert('Thist  ' + sports.length); -->
+
+<!-- var evenNumbers = new Array(0, 2, 4, 6, 8, 9, 10, 12); -->
+<!-- var allEven = evenNumbers.some(evenNumberCheck, evenNumbers); -->
+<!-- if (allEven) { -->
+  <!-- alert('Pair'); -->
+<!-- } else { -->
+	<!-- alert('Odd'); -->
+<!-- } -->
+<!-- function evenNumberCheck(value, index, array) { -->
+<!-- return (value % 2) == 0; -->
+<!-- } -->
+
+var sportsArray = ['soccer', 'basketball', 'hockey', 'football', 'cricket', 'rugby'];
+sportsArray.forEach(offerSport);
+
+function offerSport(value, index, array) {
+var sportsList = document.getElementById("sportsList");
+var bullet = document.createElement("li");
+bullet.innerText = value;
+sportsList.appendChild(bullet);
+<!-- sportsArray.sort().forEach(offerSport); -->
+}
+
+</script>
+<body>
+
+<div id="sportsList">
+<script>
+
+<!-- var sportsArray = ['soccer', 'basketball', 'hockey', 'football', 'cricket', 'rugby']; -->
+<!-- sportsArray.sort().forEach(offerSport(0,0,sportsArray)); -->
+<!-- <!-- sportsArray.forEach(offerSport); --> -->
+
+<!-- function offerSport(value, index, array) { -->
+<!-- var sportsList = document.getElementById("sportsList"); -->
+<!-- var bullet = document.createElement("li"); -->
+<!-- bullet.innerText = value; -->
+<!-- sportsList.appendChild(bullet); -->
+<!-- } -->
+
+<!-- for (var i = 0; i < 10; i++) { -->
+	<!-- document.write(i); -->
+<!-- } -->
+
+<!-- document.write('   '); -->
+
+<!-- for (var i = 10; i > 0; i--) { -->
+ <!-- document.write(i); -->
+<!-- } -->
+
+<!-- document.write('   '); -->
+<!-- for(var i= 1; i<100;i*=2){ -->
+<!-- document.write(i); -->
+<!-- document.write("<br />"); -->
+<!-- } -->
+
+<!-- document.write('   '); -->
+<!-- var alphabet = 'abcdefghijklmnopqrstuvwxyz'; -->
+<!-- for (var i = 0; i < alphabet.length; i++) { -->
+<!-- document.write(alphabet[i]); -->
+<!-- document.write("<br />"); -->
+<!-- } -->
+
+var person = { firstName: "Jane", lastName: "Doe", birthDate: "Jan 5, 1925", gender:"female" };
+for (var prop in person) {
+document.write(prop);
+}
+
+document.write('   ');
+
+var person = { firstName: "Jane", lastName: "Doe", birthDate: "Jan 5, 1925", gender:
+"female" };
+for (var prop in person) {
+document.write(person[prop]);
+}
+</script>
+</div>
+
+</body>
+</html>

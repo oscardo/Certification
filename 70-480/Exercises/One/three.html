@@ -1,0 +1,130 @@
+<html>
+<title>
+
+</title>
+
+<script>
+window.onload = function () 
+{
+<!-- var element = document.getElementById("outerDiv"); -->
+<!-- alert(element.innerHTML); -->
+
+<!-- var paragraphs = document.getElementsByTagName("p"); -->
+<!-- alert(paragraphs.length); -->
+
+<!-- var paragraphs = document.getElementsByClassName("subPara"); -->
+<!-- alert("<p> elements with class subPara: " + paragraphs.length); -->
+
+<!-- var paragraphs = document.querySelectorAll("p"); -->
+<!-- alert("Numero: " + paragraphs.length); -->
+
+<!-- var paragraphs = document.querySelector("#outerDiv"); -->
+<!-- alert(paragraphs.innerHTML); -->
+
+<!-- var element = document.getElementById("innerDiv"); -->
+<!-- alert(element.innerHTML); -->
+
+<!-- document.removeChild(element); -->
+<!-- var afterRemove = document.getElementById("innerDiv"); -->
+<!-- alert(afterRemove); -->
+
+<!-- var element = document.createElement("article"); -->
+<!-- element.innerText = "My new <article> element"; -->
+
+<!-- var element = document.getelementbyid("outerdiv"); -->
+<!-- alert(element.innerhtml); -->
+
+<!-- var outerDiv = document.getElementById("outerDiv"); -->
+<!-- var element = document.createElement("article"); -->
+<!-- element.innerText = "My new <article> element addicionado por outerDiv.appendChild(element)"; -->
+<!-- outerDiv.appendChild(element); -->
+ 
+<!-- var element = document.getElementById("outerDiv").appendChild(document.createElement("article")); -->
+<!-- element.innerText = "My new <article> element var element = document.getElementById(outerDiv).appendChild(document.createElement(article));"; -->
+
+<!-- var element = document.getElementById("outerDiv").insertBefore( -->
+<!-- document.createElement("article"), -->
+<!-- document.getElementById("innerDiv")); -->
+<!-- element.innerText = "My new <article> element document.getElementById(outerDiv).insertBefore"; -->
+
+<!-- var inner = document.getElementById("innerDiv"); -->
+<!-- var element = inner.insertBefore(document.createElement("article"),inner.firstChild); -->
+<!-- element.innerText = "My new <article> element inner.insertBefore(document.createElement(article),inner.firstChild);"; -->
+
+<!-- var inner = document.getElementById("innerDiv"); -->
+<!-- var element = inner.insertBefore(document.createElement("article"),inner.lostChild); -->
+<!-- element.innerText = "My new <article> element inner.insertBefore(document.createElement(article),inner.lostChild)"; -->
+
+<!-- var inner = document.getElementById("innerDiv"); -->
+<!-- var element = inner.insertBefore(document.createElement("article"),inner.childNodes); -->
+<!-- element.innerText = "My new <article> element inner.insertBefore(document.createElement(article),inner.childNodes"; -->
+
+<!-- var inner = document.getElementById("innerDiv"); -->
+<!-- var element = inner.insertBefore(document.createElement("article"),inner.hasChildNodes); -->
+<!-- element.innerText = "My new <article> element inner.insertBefore(document.createElement(article),inner.hasChildNodes)"; -->
+
+<!-- var innerDiv = document.getElementById("innerDiv"); -->
+<!-- var newDiv = document.createElement("div"); -->
+<!-- for (var i = 0; i < innerDiv.childNodes.length; i++) { -->
+<!-- var anchor = newDiv.appendChild(document.createElement("a")); -->
+<!-- anchor.setAttribute("href", "http://www.bing.ca"); -->
+<!-- anchor.text = innerDiv.childNodes[i].textContent; -->
+<!-- newDiv.appendChild(document.createElement("br")); -->
+<!-- } -->
+<!-- innerDiv.replaceNode(newDiv); -->
+
+var innerDiv = document.getElementById("innerDiv");
+var newDiv = document.createElement("div");
+for (var i = 0; i < innerDiv.childNodes.length; i++) {
+var anchor = newDiv.appendChild(document.createElement("a"));
+anchor.setAttribute("href", "http://www.bing.ca");
+anchor.text = innerDiv.childNodes[i].textContent;
+newDiv.appendChild(document.createElement("br"));
+}
+innerDiv.replaceNode(newDiv);
+
+
+}
+</script>
+
+<body>
+<div id="outerDiv">
+<p class='mainPara'>Main Paragraph</p>
+<ul>
+<li>First List Item</li>
+<li>Second List Item</li>
+<li>Third List Item</li>
+<li>Fourth List Item</li>
+</ul>
+<div id="innerDiv">
+<p class='subPara' id='P1'>Paragraph 1</p>
+<p class='subPara' id='P2'>Paragraph 2</p>
+<p class='subPara' id='P3'>Paragraph 3</p>
+<p class='subPara' id='P4'>Paragraph 4</p>
+</div>
+<table>
+<tr>
+<td>Row 1
+</td>
+</tr>
+<tr>
+<td>Row 2
+</td>
+</tr>
+<tr>
+<td>Row 3
+</td>
+</tr>
+<tr>
+<td>Row 4
+</td>
+</tr>
+<tr>
+<td>Row 5
+</td>
+</tr>
+</table>
+<input type="text"/><input type="submit" value="Submit"/>
+</div>
+</body>
+</html>

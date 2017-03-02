@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8"/>
+<title></title>
+<style>
+#orange1 {
+height: 150px;
+width: 225px;
+}
+.trans 
+{
+<!-- transform: scale(2.5); -->
+<!-- transform: rotate(145deg); -->
+<!-- transform: translate(150px,70px); -->
+<!-- transform: skew(10deg, 25deg); -->
+
+<!-- or combitation  -->
+transform: translate(150px,75px), scale(1.7), skew(15deg, 10deg);
+
+}
+</style>
+<script>
+window.onload = function () {
+document.getElementById("orange1").onclick = function () {
+this.classList.add("trans");
+}
+}
+</script>
+</head>
+<body>
+<img id="orange1" src="orange.jpg" style="position:relative"/>
+</body>
+</html>
