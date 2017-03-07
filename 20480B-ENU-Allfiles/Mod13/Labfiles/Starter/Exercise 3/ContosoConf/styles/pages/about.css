@@ -1,0 +1,59 @@
+/* Styles for the about page */
+
+.about > article > section {
+    text-align: justify;
+
+    /* Columns Layout */
+    column-count: 3;
+    column-gap: 5rem;
+}
+
+.about p:first-child:first-letter /* Picks out first letter only for drop cap effect */ {
+    font-size: 300%;
+    float: left;
+    margin: 0 0.5rem 0 0;
+    line-height: .8;
+    color: #aaa;
+}
+
+.about p {
+    text-indent: 3rem;
+}
+
+.about p:first-child /* Prevents text indenting after drop cap */ {
+    text-indent: 0;
+    margin-top: 0;
+}
+
+.about blockquote {
+    font-size: 1.2em;
+    padding: 0 0 0 6rem;
+    margin: 0;
+    font-style: italic;
+    position: relative;
+}
+
+.about blockquote:before {
+    content: '\201C';
+    position: absolute;
+    font-size: 10rem;
+    font-family: serif;
+    left: 0;
+    top: -1rem;
+    line-height: 1;
+}
+
+/* For small screens revert back to normal layout */
+@media screen and (max-width: 960px) {
+    .about > article > section {
+        column-count: 1;
+    }
+    
+    .about p:first-child:first-letter {
+        font-size: inherit;
+        float: inherit;
+        margin: inherit;
+        line-height: inherit;
+        color: inherit;
+    }
+}

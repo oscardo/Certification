@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>Canvas transformations</title>
+  <style>
+  
+    body {
+      font-family: arial, verdana;
+      font-size: 12px;
+    }
+  
+    button {
+      background-color: yellow;
+      color: orange;
+      width: 200px;
+      height: 30px;
+      margin: 0px 10px 5px 0px;
+    }
+  
+    canvas {
+      border: 2px solid darkblue;
+    }
+  </style>
+	
+</head>
+
+<body>
+	
+  <h1>Transformations</h1>
+  
+  <p>Click a button to view a transformation</p>
+  
+  <button onclick="demoSeparateTransformations()">Separate Transformations</button>
+  <button onclick="demoMatrixTransformations()">Matrix Transformations</button>
+  <br/>
+  
+  <canvas id="myCanvas" width="900px" height="400px">
+    Sorry, your browser does not support canvas.
+  </canvas>
+
+  <img id="wales" src="Wales.png" style="display: none;" />
+  
+  <script>
+  
+    // Get the canvas element and its drawing context.
+    var canvas = document.getElementById('myCanvas');
+    var context = canvas.getContext('2d');
+    context.lineWidth = 5;
+
+	
+    function demoSeparateTransformations() {
+    
+      // Clear any existing content in the canvas, and save the current context settings.
+      context.clearRect(0, 0, canvas.width, canvas.height);
+      context.save();
+
+      // Translate the coordindate system, using translate(deltaX, deltaY).      
+      context.translate(canvas.width/2, canvas.height/2);
+
+      // Scale the coordindate system, using scale(scaleX, scaleY).      
+      context.scale(2, 1.5);
+      
+      // Rotate the coordinate system, using rotate(clockwiseAngleInRadians).
+      context.rotate(Math.PI/4);
+      
+      // Draw the shape.
+      drawShape();
+      
+      // Restore the original context settings.
+      context.restore();
+    }
+
+	
+    function demoMatrixTransformations() {
+    
+      // Clear any existing content in the canvas, and save the current context settings.
+      context.clearRect(0, 0, canvas.width, canvas.height);
+      context.save();
+
+      // First do a simple transformation.
+      context.translate(400, 0);
+
+      // Perform a relative transformation, using transform(scaleX, skewX, skewY, scaleY, translateX, translateY).
+      context.transform(2, 0, 0, 1.5, canvas.width/2, canvas.height/2);
+
+      // Perform an absolute transformation, using setTransform(scaleX, skewX, skewY, scaleY, translateX, translateY).
+      // context.setTransform(2, 0, 0, 1.5, canvas.width/2, canvas.height/2);
+      
+      // Draw the shape.
+      drawShape();
+      
+      // Restore the original context settings.
+      context.restore();
+    }
+
+	
+    function drawShape() {
+	
+      // Create a pattern to use as a style for filling and stroking.
+      var image = document.getElementById("wales");
+      var theStyle = context.createPattern(image, "repeat");
+
+      // Draw a filled triangle, using the specified style.
+      context.fillStyle = theStyle;
+      context.strokeStyle = "rgb(200, 200, 200)";
+      context.beginPath();
+      context.moveTo(0, -80);
+      context.lineTo(100, 80);
+      context.lineTo(-100, 80);
+      context.closePath();
+      context.fill();
+      context.stroke();
+    }
+
+  </script>
+ 
+</body>
+</html>

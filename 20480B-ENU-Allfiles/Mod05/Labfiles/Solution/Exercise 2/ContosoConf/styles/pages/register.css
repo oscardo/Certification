@@ -1,0 +1,28 @@
+/* Styles for the register page */
+
+.register form {
+    max-width: 40rem;    
+}
+
+.register .field {
+    margin-bottom: 1rem;
+}
+
+.register label {
+    display: block;
+}
+
+.register input {
+    display: block;
+    padding: .5rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.register button {
+    padding: .5rem;
+}
+
+.register form.submission-attempted input:invalid {
+    border: 1px solid #b00;
+}

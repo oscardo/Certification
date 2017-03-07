@@ -1,0 +1,22 @@
+/* Styles for the location page */
+
+#venue-map {
+    display: -ms-grid;
+    -ms-grid-columns: 75% 25%;
+}
+
+#venue-map svg {
+    display: block;
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+}
+
+#venue-map div {
+    padding-left: 3rem;
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+}
+
+.room {
+    cursor: pointer;
+}

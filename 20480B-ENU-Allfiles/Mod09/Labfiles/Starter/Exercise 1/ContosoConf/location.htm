@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <title>ContosoConf location and venue map</title>
+        
+        <link href="/styles/site.css" rel="stylesheet" type="text/css" />
+        <link href="/styles/nav.css" rel="stylesheet" type="text/css" />
+        <link href="/styles/header.css" rel="stylesheet" type="text/css" />
+        <link href="/styles/footer.css" rel="stylesheet" type="text/css" />
+        
+        <link href="/styles/pages/location.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        
+        <nav class="page-nav">
+            <div class="container">
+                <a href="/index.htm">Home</a>
+                <a href="/about.htm">About</a>
+                <a href="/schedule.htm">Schedule</a>
+                <a href="/register.htm">Register</a>
+                <a href="/location.htm" class="active">Location</a>
+            </div>
+        </nav>
+        
+        <header class="page-header">
+            <div class="container">
+                <h1>ContosoConf</h1>
+                <p class="tag-line">A two-track conference on the latest HTML5 developments</p>
+            </div>
+        </header>
+        
+        <section class="page-section location">
+            <div class="container">
+                <section class="travel">
+                    <h1>Travelling to ContosoConf</h1>
+                    <h2 id="distance"></h2>
+                    <h2>Address</h2>
+                    <address>
+                        Conference Center<br/>
+                        1234 Main Street<br/>
+                        Seattle<br/>
+                        WA 98999
+                    </address>
+                    <h2>Hotels</h2>
+                    <p>...</p>
+                </section>
+
+                <section class="venue">
+                    <h1>Interactive conference venue map</h1>
+                    <div id="venue-map">
+                        <svg viewBox="-1 -1 302 102" width="100%" height="230">
+                            <!-- Room A -->
+                            <g id="room-a" class="room">
+                                <rect fill="#fff" x="0" y="0" width="100" height="100"></rect>
+                                <text x="13" y="55" font-weight="bold" font-size="20">ROOM A</text>
+                            </g>
+                            <!-- Room B -->
+                            
+                            <!-- The outline of the building -->
+                            <polyline fill="none" stroke="#000" points="135,95 140,100 0,100 0,0 100,0 100,80 130,80 130,70 110,70 110,30 190,30 190,70 170,70 170,80 200,80 200,0 300,0 300,100 160,100 165,95"></polyline>
+                            <text x="150" y="55" font-size="12" style="text-anchor: middle">Registration</text>
+                        </svg>
+                
+                        <div id="instruction">
+                            <p>Click a room on the map to see more information.</p>
+                        </div>
+                        <div id="room-a-info" style="display: none">
+                            <h2>Room A</h2>
+                        </div>
+                        <div id="room-b-info" style="display: none">
+                            <h2>Room B</h2>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </section>
+
+        <footer class="page-footer">
+            <div class="container">
+                <p>
+                    Hosted by Contoso
+                </p>
+                <address>
+                    Conference Center<br />
+                    1234 Main Street<br />
+                    Seattle<br />
+                    WA 98999
+                </address>
+                <p>
+                    &#169; 2012 Contoso
+                </p>
+            </div>
+        </footer>
+
+        <script src="/scripts/_namespace.js" type="text/javascript"></script>
+        <script src="/scripts/geometry.js" type="text/javascript"></script>
+        <script src="/scripts/pages/location.js" type="text/javascript"></script>
+        <script src="/scripts/offline.js" type="text/javascript"></script>
+    </body>
+</html>

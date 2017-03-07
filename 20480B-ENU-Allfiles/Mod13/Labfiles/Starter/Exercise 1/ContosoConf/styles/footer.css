@@ -1,0 +1,17 @@
+/* Style for the page footer */
+
+footer.page-footer {
+    background-color: #333;
+    color: #fff;
+    font-size: 1.4rem;
+    height: 18rem;
+}
+
+footer.page-footer .container {
+    padding: 1rem;
+}
+
+/* To stick the footer at the bottom of the page, give the page-section a min-height so it pushes down */
+section.page-section {
+    min-height: calc(100% - 46.6rem); /* 46.6rem is the combined height of the nav, header and footer. */
+}

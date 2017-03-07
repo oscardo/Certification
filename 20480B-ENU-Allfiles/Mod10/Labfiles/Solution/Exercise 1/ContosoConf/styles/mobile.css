@@ -1,0 +1,32 @@
+/* Styles for smaller browsers e.g. phones and tablets */
+
+@media screen and (max-width: 960px) {
+    
+    nav.page-nav .container {
+        display: -ms-flexbox;
+        display: flexbox;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -ms-flex-pack: center;
+        flex-pack: center;
+    }
+    
+    nav.page-nav a {
+        border: 1px dotted #3D3D3D;
+        margin: .5rem;
+        padding: 0 .8rem;
+    }
+    
+    nav.page-nav .active:before,
+    nav.page-nav .active:after {
+        display: none;
+    }
+    
+    /* TODO: Reduce the page header to take up less space */
+    
+}
+
+
+/* TODO: Add another media query that targets max-width: 320px
+         Make the page header h1 even smaller
+*/

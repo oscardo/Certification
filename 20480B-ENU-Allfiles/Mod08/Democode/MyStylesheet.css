@@ -1,0 +1,171 @@
+/* General styles */
+
+body {
+	background-color: #DDDDDD;
+	font-family: Century Gothic, Tahoma, Arial, Verdana, Helvetica, sans-serif;
+	margin: 0px auto;
+	max-width:1000px;
+	border:solid;
+	border-color:#DDDDDD;
+}
+
+#MyMainContainer {
+	background-color: #AAAAFF;
+}
+
+/* Header and footer styles */
+
+header {
+	background-color: LightBlue;
+	display: block;
+	color: Yellow;
+	text-align: center;
+	margin: 0px;
+	padding: 10px;
+}
+
+header h2 {
+	margin: 0px;
+}
+
+h1 {
+	font-size: 50px;
+	margin: 0px;
+}
+
+h2 {
+	color: White;
+	font-size: 20px;
+	margin: 0px;
+}
+
+h3 {
+	font-size: 15px;
+	text-align:center;
+	color: Navy;
+	margin: 0px;
+}
+
+h4 {
+	text-align: center;
+	color: Navy;
+	background-color: White;
+	box-shadow: 2px 2px 20px Green;
+	-ms-transform: rotate(-45deg);
+	-webkit-box-shadow: 2px 2px 20px Green;
+	-webkit-transform: rotate(-45deg);
+	-moz-box-shadow: 2px 2px 20px Green;
+	-moz-transform: rotate(-45deg);
+	position: absolute;
+	padding: 0px 150px;
+	top: 20px;
+	left: -150px;
+}
+
+.rotated {
+	text-align: center;
+	-webkit-box-shadow: 2px 2px 20px Green;
+	-webkit-transform: rotate(-45deg);
+	-moz-box-shadow: 2px 2px 20px Green;
+	-moz-transform: rotate(-45deg);
+}
+
+footer {
+	clear: both;	
+	display: block;
+	background-color: LightBlue;
+	color:Yellow;
+	text-align:center;
+	padding: 15px;
+}
+
+footer h2 {
+	font-size: 14px;
+	color: White;
+}
+
+/* Navigation area styles */
+
+nav {
+	display:block;
+	width:25%;
+	float:left;
+}
+
+nav a:link {
+	color: Navy;
+	display: block;
+	border-bottom: 1px solid Yellow;
+	padding: 10px;
+	text-decoration: none;
+	font-weight: bold;
+	margin: 2px;
+}
+
+nav a:hover {
+	color: Orange;
+	background-color: White;
+}
+
+nav h3 {
+	margin: 15px;
+	color: Yellow;
+}
+
+/* Main section styles */
+
+section {
+	display:block;
+	width:50%;
+	float:left;
+}
+
+article {
+	background-color: #eee;
+	display:block;
+	margin: 10px;
+	padding: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+}
+
+article header {
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	padding: 5px;
+
+}
+
+article footer {
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	padding: 5px;
+}
+
+article h1 {
+	font-size: 18px;
+}
+	
+/* Aside area */
+
+aside {
+	display:block;
+	width:25%;
+	float:left;
+}
+
+aside h3 {
+	margin: 15px;
+	color: yellow;
+}
+
+aside p {
+	margin: 15px;
+	color: white;
+	font-size: 15px;
+	font-style: italic;
+}
+

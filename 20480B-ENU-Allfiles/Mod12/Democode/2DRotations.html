@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>2D Rotations</title>
+
+   <style>
+    div {
+    	font-family: verdana, arial; 
+    	font-size: small;
+    	width: 400px;
+    	height: 60px;
+    	background-color: yellow;
+    	border-radius: 5px;
+    }
+    
+    .rotate1 {
+    	transform: rotate(10deg);
+    	-ms-transform: rotate(10deg);
+    	-webkit-transform: rotate(10deg);
+    	-moz-transform: rotate(10deg);
+    	-o-transform: rotate(10deg);
+    }
+    
+    .rotate2 {
+    	transform: rotate(-10deg);
+    	-ms-transform: rotate(-10deg);
+    	-webkit-transform: rotate(-10deg);
+    	-moz-transform: rotate(-10deg);
+    	-o-transform: rotate(-10deg);
+    }
+    
+    .rotate3 {
+    	transform: rotate(-0.5rad);
+    	-ms-transform: rotate(-0.5rad);
+    	-webkit-transform: rotate(-0.5rad);
+    	-moz-transform: rotate(-0.5rad);
+    	-o-transform: rotate(-0.5rad);
+    }
+    
+    .translateAndRotateAboutTopLeft {
+    	transform: translate(100px, 100px) rotate(10deg);
+    	-ms-transform: translate(100px, 100px) rotate(10deg);
+    	-webkit-transform: translate(100px, 100px) rotate(10deg);
+    	-moz-transform: translate(100px, 100px) rotate(10deg);
+    	-o-transform: translate(100px, 100px) rotate(10deg);
+
+    	transform-origin: left top;
+    	-ms-transform-origin: left top;
+    	-webkit-transform-origin: left top;
+    	-moz-transform-origin: left top;
+    	-o-transform-origin: left top;
+    }
+    
+    </style>
+</head>
+
+<body>
+
+    <div class="rotate1">
+    Rotate 10 degrees clockwise (about center-point).<br>
+    transform: rotate(10deg);
+	</div>
+	
+	<br/><br/>
+
+    <div class="rotate2">
+    Rotate 10 degrees anticlockwise (about center-point).<br>
+    transform: rotate(-10deg);
+	</div>
+
+	<br/><br/>
+
+    <div class="rotate3">
+    Rotate 0.5 radians anticlockwise (about center-point).<br>
+    transform: rotate(-0.5rad);
+	</div>
+
+    <div class="translateAndRotateAboutTopLeft">
+    Translate and then rotate (about top-left corner).<br>
+    transform: translate(100px, 100px) rotate(10deg);
+    transform-origin:     left top;
+	</div>
+
+</body>
+
+</html>

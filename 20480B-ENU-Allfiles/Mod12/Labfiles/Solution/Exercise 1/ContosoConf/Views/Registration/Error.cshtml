@@ -1,0 +1,16 @@
+﻿@model IEnumerable<string>
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Contoso Conf</title>
+    </head>
+    <body>
+        <h1>Invalid registration information</h1>
+        <ul>
+            @foreach(var error in Model)
+            {
+                <li>@error</li>
+            }
+        </ul>
+    </body>
+</html>

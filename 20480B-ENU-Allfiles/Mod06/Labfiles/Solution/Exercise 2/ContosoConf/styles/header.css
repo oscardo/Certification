@@ -1,0 +1,69 @@
+/* Styles for the page header */
+
+header.page-header {
+    height: 20rem;
+    border-bottom: 4px solid #1d1d1d;
+}
+
+header.page-header .container {
+    padding: 1rem;
+    position: relative;
+}
+
+header.page-header h1 {
+    margin: 0;
+    font-size: 6rem;
+    padding-top: 3rem;
+}
+
+header.page-header p {
+    font-size: 2rem;
+    font-style: italic;
+}
+
+/* TODO: header.page-header .register */
+header.page-header .register {
+    display: block;
+    position: absolute;
+    top: 2rem;
+    right: 3.5rem;
+    width: 16rem;
+    height: 10rem;
+    padding-top: 6rem;
+    font-size: 2.7rem;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-shadow: 0 1px 0 #000;
+    color: #fff;
+    background: -ms-linear-gradient(#a80000, #740404);
+    background: linear-gradient(#a80000, #740404);
+    -ms-border-radius: 100%;
+    border-radius: 100%;
+    -ms-transform: rotate(6deg);
+    transform: rotate(6deg);
+}
+
+/* TODO: header.page-header .register:hover */
+header.page-header .register:hover {
+    background: -ms-linear-gradient(#bc0101, #8c0909);
+    background: linear-gradient(#bc0101, #8c0909);
+}
+
+/* TODO: header.page-header .register:before */
+header.page-header .register:before {
+    display: block;
+    position: absolute;
+    top: -.7rem;
+    right: -.7rem;
+    height: 16.8rem;
+    width: 16.8rem;
+    content: "";
+    border: 3px dotted #740404;
+    -ms-border-radius: 100%;
+    border-radius: 100%;
+}
+
+header.page-header .register .free {
+    font-size: 80%;
+}

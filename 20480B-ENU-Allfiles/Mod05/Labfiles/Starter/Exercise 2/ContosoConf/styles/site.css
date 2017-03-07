@@ -1,0 +1,38 @@
+/* Styles used throughout the entire web site */
+
+html {
+    /* font-size 62.5% makes 1rem equal 10px for easy size calculations. */
+    font-size: 62.5%;
+    font-family: Calibri, Arial, sans-serif;
+    background-color: #EAEEFA;
+}
+
+body {
+    margin: 0;
+    /* Default font-size to about 18px */
+    font-size: 1.8rem;
+}
+
+.container {
+    padding: 0 1rem;
+    max-width: 94rem;
+    /* Horizontally center containers */
+    margin: 0 auto;
+}
+
+nav {
+    background-color: #1d1d1d;
+    line-height: 6rem;
+    font-size: 1.7rem;
+}
+
+nav a {
+    color: #fff;
+    padding: 1rem;
+}
+
+h1 {
+    font-size: 4rem;
+    letter-spacing: -1px;
+    margin: 1em 0 .25em 0;
+}

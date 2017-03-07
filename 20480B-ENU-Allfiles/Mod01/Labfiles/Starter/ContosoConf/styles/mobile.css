@@ -1,0 +1,47 @@
+/* Styles for smaller browsers e.g. phones and tablets */
+
+@media screen and (max-width: 960px) {
+    
+    nav.page-nav .container {
+        display: -ms-flexbox;
+        display: -webkit-flexbox;
+        display: flexbox;
+        -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -ms-flex-pack: center;
+        -webkit-flex-pack: center;
+        flex-pack: center;
+    }
+    
+    nav.page-nav a {
+        border: 1px dotted #3D3D3D;
+        margin: .5rem;
+        padding: 0 .8rem;
+    }
+    
+    nav.page-nav .active:before,
+    nav.page-nav .active:after {
+        display: none;
+    }
+    
+    header.page-header {
+        height: auto;
+    }
+    
+    header.page-header h1 {
+        font-size: 3rem;
+        padding-top: 0;
+    }
+    
+    header.page-header .tag-line {
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    
+    header.page-header h1 {
+        font-size: 2rem;
+    }
+}

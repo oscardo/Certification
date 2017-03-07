@@ -1,0 +1,82 @@
+/* Styles for the page header */
+
+header.page-header {
+    height: 20rem;
+    background-repeat: repeat-x;
+    background-position: left bottom;
+    border-bottom: 4px solid #1d1d1d;
+}
+
+header.page-header .container {
+    padding: 1rem;
+    position: relative;
+}
+
+header.page-header h1 {
+    margin: 0;
+    font-size: 6rem;
+    padding-top: 3rem;
+}
+
+header.page-header p {
+    font-size: 2rem;
+    font-style: italic;
+}
+
+
+header.page-header .register {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    width: 160px;
+    height: 100px;
+    padding-top: 60px;
+    opacity: 0.8;
+    font-size: 2.7rem;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    /* Rounded corners to create circle */
+    border-radius: 100%;
+    text-shadow: 0 1px 0 #000;
+    transform: rotate(6deg);
+    background: -ms-linear-gradient(#a80000, #740404);
+    background: linear-gradient(#a80000, #740404);
+
+    /* TODO: Transition the transform property over 1 second */
+    transition: transform 1s;
+}
+
+header.page-header .register:hover {
+    color: #fff;
+    background: -ms-linear-gradient(#bc0101, #8c0909);
+    background: linear-gradient(#bc0101, #8c0909);
+
+    /* TODO: rotate to 16 degrees and scale by 1.1 */
+    transform: rotate(16deg) scale(1.1,1.1);
+
+    /* TODO: Transition the transform property over 1 second */
+    transition: transform 1s;
+}
+
+header.page-header .register:before /* Creates dotted border */ {
+    display: block;
+    position: absolute;
+    top: -7px;
+    right: -7px;
+    height: 168px;
+    width: 168px;
+    content: "";
+    border: 3px dotted #740404;
+    border-radius: 100%;
+}
+
+header.page-header .register .free {
+    font-size: 80%;
+}
+
+
+
+

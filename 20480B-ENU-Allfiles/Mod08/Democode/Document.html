@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>Hello HTML5</title>
+  <link rel="stylesheet" href="MyStylesheet.css">
+
+  <script type="text/javascript">
+
+	function onload() {
+		var hyperlinks = document.querySelectorAll("a");
+		
+		for (var i = 0; i < hyperlinks.length; i++) {
+			hyperlinks[i].style.backgroundColor = "yellow";
+		}
+	}
+	
+	window.addEventListener("load", onload, false);	
+  
+  </script>
+
+</head>
+
+<body>
+
+   <header>
+     <h1>Hello HTML5</h1>
+     <h2>Enjoy the ride!</h2>
+     <h4>Fancy eh!</h4>
+   </header>
+
+    <div id="MyMainContainer">
+
+        <nav>
+          <h3>Links</h3>
+          <a href="http://www.microsoft.com">Microsoft</a>
+          <a href="http://www.beautyoftheweb.com/">Beauty of the Web</a>
+        </nav>
+
+        <section>
+        
+			<article>
+                <header>
+                    <h1>Welcome!</h1>
+                </header>
+                <p>This example shows how to use HTML5 semantic markup tags, such as section, article, header, and footer.</p>
+                <p>This page looks much better if you link it to the stylesheet!</p>
+                <footer>
+                    <h2>Welcome footer</h2>
+                </footer>
+            </article>
+            
+			<article>
+                <header>
+                    <h1>New Features in HTML5...</h1>
+                </header>
+                <ul>
+					<li>Canvas and SVG graphics</li>
+					<li>Channel messaging</li>
+					<li>Cross-document messaging</li>
+					<li>Geolocation</li>
+					<li>MathML</li>
+					<li>Microdata</li>
+					<li>Server-Sent events</li>
+					<li>WebSocket API and protocol</li>
+					<li>Web origin concept</li>
+					<li>Web storage</li>
+					<li>Web SQL database</li>
+					<li>Web Workers</li>
+					<li>XMLHttpRequest Level 2</li>
+				</ul>
+
+                <footer>
+                    <h2>New Features Footer</h2>
+                </footer>
+            </article>
+        </section>
+
+        <aside>
+            <h3>By the way...</h3>
+            <p>You can also use many of the traditional HTML tags, such as h1, h2, h3, p, div, etc. HTML5 is all about evolution, not revolution.</p>
+        </aside>
+		
+        <footer>
+            <h2>Thanks for visiting! Feel free to contact us with any suggestions.</h2>
+        </footer>
+    </div>
+
+</body>
+
+</html>

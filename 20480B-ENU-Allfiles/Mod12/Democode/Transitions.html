@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CSS Transitions</title>
+
+    <style type="text/css"> 
+
+        div {
+            font-family: verdana, arial; 
+            font-size: small;
+            width: 400px;
+            height: 60px;
+            padding: 10px 10px;
+            margin: 10px;
+            background-color: yellow;
+            border-radius: 5px;
+        }
+
+        div.simple {
+            transition: width 2s, height 2s, font-size 2s, background-color 3750ms;
+        }
+
+        div.complex {
+                        transition-property: width, height, font-size, background-color;
+            transition-duration: 2s, 2s, 2s, 3750ms;
+            transition-timing-function: ease-in;
+            transition-delay: 1s;
+        }
+
+        div:hover {
+            width: 600px;
+            height: 80px;
+            font-size: large; 
+            background-color: red
+        }
+
+        select {
+            width: 420px;
+            margin: 10px;
+        }
+
+        button {
+            display: block;
+            margin:10px;
+        }
+
+    </style>
+
+    <script>
+        function onLoad() {
+
+            initMessagesList();
+
+            var divElements = document.querySelectorAll("div");
+            for (var i = 0; i < divElements.length; i++) {
+                divElements[i].addEventListener("transitionend", onTransitionend, true);
+            }
+        }
+
+        var messagesElement = document.querySelector("messages");
+
+        function onTransitionend(e) {
+            messages.add(new Option(e.propertyName + ", elapsedTime " + e.elapsedTime));
+        }
+
+        function initMessagesList() {
+            messages.innerHTML = "";
+            messages.add(new Option("---Expand to see transitionend events---"));
+        }
+
+
+    </script>
+
+</head>
+
+<body onload="onLoad()">
+
+    <div class="simple">Hover here to see simple transitions</div>
+    <div class="complex">Hover here to see complex transitions</div>
+
+    <select id="messages"></select>
+    
+    <button onclick="initMessagesList()">Clear events</button>
+</body>
+</html>
+

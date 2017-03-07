@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>2D Scaling</title>
+
+   <style>
+    div {
+    	font-family: verdana, arial; 
+    	font-size: small;
+    	width: 300px;
+    	height: 40px;
+    	background-color: yellow;
+    	border-radius: 5px;
+        }
+    
+    .scale1 {
+    	transform: scale(0.75);
+    	-ms-transform: scale(0.75);
+    	-webkit-transform: scale(0.75);
+    	-moz-transform: scale(0.75);
+    	-o-transform: scale(0.75);
+    }
+    
+    .scale2 {
+    	transform: scale(1.5);
+    	-ms-transform: scale(1.5);
+    	-webkit-transform: scale(1.5);
+    	-moz-transform: scale(1.5);
+    	-o-transform: scale(1.5);
+    }
+
+    .scale3 {
+    	transform: scale(2.0, 1.5);
+    	-ms-transform: scale(2.0, 1.5);
+    	-webkit-transform: scale(2.0, 1.5);
+    	-moz-transform: scale(2.0, 1.5);
+    	-o-transform: scale(2.0, 1.5);
+    }
+    
+    .scale4 {
+    	transform: scaleX(1.5);
+    	-ms-transform: scaleX(1.5);
+    	-webkit-transform: scaleX(1.5);
+    	-moz-transform: scaleX(1.5);
+    	-o-transform: scaleX(1.5);
+    }
+    
+    .scale5 {
+    	transform: scaleY(1.5);
+    	-ms-transform: scaleY(1.5);
+    	-webkit-transform: scaleY(1.5);
+    	-moz-transform: scaleY(1.5);
+    	-o-transform: scaleY(1.5);
+    }
+    
+	</style>
+</head>
+
+<body>
+
+    <div class="scale1">
+    Scale x and y the same amount (smaller).<br>
+    transform: scale(0.75);
+	</div>
+	
+	<br/><br/>
+
+    <div class="scale2">
+    Scale x and y the same amount (bigger).<br>
+    transform: scale(1.5);
+	</div>
+
+	<br/><br/>
+
+    <div class="scale3">
+    Scale x and y different amounts.<br>
+    transform: scale(2.0, 1.5);
+	</div>
+
+	<br/><br/>
+
+    <div class="scale4">
+    Scale X only.<br>
+    transform: scaleX(1.5);
+	</div>
+	
+	<br/><br/>
+
+    <div class="scale5">
+    Scale Y only.<br>
+    transform: scaleY(1.5);
+	</div>
+    
+</body>
+
+</html>

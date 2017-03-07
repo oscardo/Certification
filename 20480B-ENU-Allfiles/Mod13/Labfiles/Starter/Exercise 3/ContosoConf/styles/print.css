@@ -1,0 +1,12 @@
+/* Styles for when page is being printed */
+
+nav.page-nav,
+header.page-header,
+footer.page-footer {
+    display: none;
+}
+
+.container {
+    padding: 0;
+    max-width: none;
+}

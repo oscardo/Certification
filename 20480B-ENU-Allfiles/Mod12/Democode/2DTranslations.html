@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>2D Translations</title>
+
+   <style>
+    div {
+    	font-family: verdana, arial; 
+    	font-size: small;
+    	width: 300px;
+    	height: 40px;
+    	background-color: yellow;
+    	border-radius: 5px;
+    }
+    
+    .translate1 {
+    	transform: translate(60px);
+    	-ms-transform: translate(60px);
+    	-webkit-transform: translate(60px);
+    	-moz-transform: translate(60px);
+    	-o-transform: translate(60px);
+    }
+    
+    .translate2 {
+    	transform: translate(-60px);
+    	-ms-transform: translate(-60px);
+    	-webkit-transform: translate(-60px);
+    	-moz-transform: translate(-60px);
+    	-o-transform: translate(-60px);
+    }
+
+    .translate3 {
+    	transform: translate(20%);
+    	-ms-transform: translate(20%);
+    	-webkit-transform: translate(20%);
+    	-moz-transform: translate(20%);
+    	-o-transform: translate(20%);
+    }
+    
+    .translate4 {
+    	transform: translate(-20%);
+    	-ms-transform: translate(-20%);
+    	-webkit-transform: translate(-20%);
+    	-moz-transform: translate(-20%);
+    	-o-transform: translate(-20%);
+    }
+
+    .translate5 {
+    	transform: translate(400px, 20px);
+    	-ms-transform: translate(400px, 20px);
+    	-webkit-transform: translate(400px, 20px);
+    	-moz-transform: translate(400px, 20px);
+    	-o-transform: translate(400px, 20px);
+    }
+    
+    .translate6 {
+    	transform: translateX(10px);
+    	-ms-transform: translateX(10px);
+    	-webkit-transform: translateX(10px);
+    	-moz-transform: translateX(10px);
+    	-o-transform: translateX(10px);
+    }
+    
+    .translate7 {
+    	transform: translateY(10px);
+    	-ms-transform: translateY(10px);
+    	-webkit-transform: translateY(10px);
+    	-moz-transform: translateY(10px);
+    	-o-transform: translateY(10px);
+    }
+    
+	</style>
+</head>
+
+<body>
+
+    <div class="translate1">
+    Translate x positive amount.<br>
+    transform: translate(60px);
+	</div>
+	
+    <div class="translate2">
+    Translate x negative amount.<br>
+    transform: translate(-60px);
+	</div>
+
+    <div class="translate3">
+    Translate x positive percentage.<br>
+    transform: translate(20%);
+	</div>
+	
+    <div class="translate4">
+    Translate x negative percentage.<br>
+    transform: translate(-20%);
+	</div>
+
+    <div class="translate5">
+    Translate x and y.<br>
+    transform: translate(400px, 20px);
+	</div>
+
+    <div class="translate6">
+    TranslateX.<br>
+    transform: translateX(10px);
+	</div>
+	
+    <div class="translate7">
+    TranslateY.<br>
+    transform: translateY(10px);
+	</div>
+    
+</body>
+
+</html>

@@ -1,0 +1,8 @@
+var headTag = document.getElementsByTagName("head")[0];
+
+var newScript = document.createElement("script");
+
+newScript.type = "text/javascript";
+newScript.src  = "jquery-1.5.1.js";
+
+headTag.appendChild(newScript);

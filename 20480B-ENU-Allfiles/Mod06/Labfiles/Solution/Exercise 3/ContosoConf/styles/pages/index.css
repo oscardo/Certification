@@ -1,0 +1,52 @@
+/* Styles for the index page */
+
+.speakers ul {
+    list-style-type: none;
+    padding: 0;
+    display: -ms-flexbox;
+    display: -webkit-flexbox;
+    display: flexbox;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.speakers li {
+    display: block;
+    margin: 0 2rem 1rem 0; 
+}
+
+.speakers li img {
+    border: 1px solid #888;
+}
+
+.speakers li .name {
+    text-align: center;
+    display: block;
+}
+
+
+.sponsors ul {
+    list-style-type: none;
+    padding: 0;
+    display: -ms-flexbox;
+    display: -webkit-flexbox;
+    display: flexbox;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.sponsors li {
+    display: block;
+    margin: 0 2rem 1rem 0;
+    max-width: 16rem;
+}
+
+.sponsors li img {
+    max-width: 100%;
+    display: block;
+}
+
+
+.video video {
+    max-width: 100%;    
+}

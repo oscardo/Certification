@@ -1,0 +1,47 @@
+/* Styles for the about page */
+
+/* TODO: .about > article > section */
+.about > article > section {
+    column-count: 3;
+    column-gap: 5rem;
+    text-align: justify;
+}
+
+/* TODO: Add drop cap styling */
+.about p:first-child:first-letter {
+    font-size: 300%;
+    float: left;
+    margin: 0 0 5rem 0 0;
+    line-height: .8;
+    color: #aaa;
+}
+
+/* TODO: Indent paragraphs */
+.about p {
+    text-indent: 3rem;
+}
+
+.about p:first-child {
+    /* Prevents text indenting after drop cap */
+    text-indent: 0;
+    margin-top: 0;
+}
+
+/* TODO: Blockquote */
+.about blockquote {
+    font-size: 1.2em;
+    padding: 0 0 0 6rem;
+    margin: 0;
+    font-style: italic;
+    position: relative;
+}
+
+.about blockquote:before {
+    content: '\201C';
+    position: absolute;
+    font-size: 10rem;
+    font-family: serif;
+    left: 0;
+    top: -1rem;
+    line-height: 1;
+}

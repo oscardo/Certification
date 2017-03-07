@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Keyframe Animations</title>
+
+    <style type="text/css">
+
+        body {
+            font-family: arial, verdana, sans-serif;
+            font-size: smaller;
+        }
+
+        #pooltable {
+            width: 340px;
+            height: 200px;
+            margin-bottom: 50px;
+            border-radius: 5px;
+            background: green;
+        }
+
+        #pooltable.animate {
+            background: blue;
+        }
+
+        #ball {
+            width: 40px;
+            height: 40px;
+            border-radius: 20px;
+            background: white;
+            position: relative;
+            left: 0px;
+            top: 0px;
+        }
+
+        @-ms-keyframes ballmovement {
+
+            0% {
+                left: 0px;
+                top: 0px;
+                background-color: yellow;
+                -ms-animation-timing-function: ease-in;
+            }
+    
+            33% {
+                left: 100px;
+                top: 160px;
+                background-color: orange;
+            }
+    
+            66% {
+                left: 200px;
+                top: 0px;
+                background-color: red;
+            }
+    
+            100% {
+                left: 300px;
+                top: 160px;
+                background-color: purple;
+                -ms-animation-timing-function: ease-out;
+            }
+        }
+
+        #ball.animate {
+            -ms-animation-name: ballmovement;
+            -ms-animation-duration: 10s;
+            -ms-animation-delay: 3s;
+            -ms-animation-timing-function: linear;
+            -ms-animation-iteration-count: 2;
+            -ms-animation-direction: alternate;
+        }
+
+    </style>
+
+    <script>
+
+        // Declare global variables.
+        var pooltable, ball, button, messageLabel;
+
+
+        // Page initialization - handle ball animation events.
+        function init() {
+
+            // Initialize global variables.
+            pooltable = document.getElementById("pooltable");
+            ball = document.getElementById("ball");
+            button = document.getElementById("button");
+            messageLabel = document.getElementById("messageLabel");
+
+            // Handle the event that occurs when the ball animation starts.
+            ball.addEventListener("MSAnimationStart", function (e) {
+                pooltable.classList.add("animate");
+                messageLabel.innerHTML += "Animation <b>" +  e.animationName + "</b> started at " + new Date() + ".<br>";
+            }, false);
+
+            // Handle the event that occurs for each iteration.
+            ball.addEventListener("MSAnimationIteration", function (e) {
+                messageLabel.innerHTML += "Animation <b>" +  e.animationName + "</b> iteration completed, elapsed time " + e.elapsedTime + ".<br>";
+            }, false);
+
+            // Handle the event that occurs when the ball animation ends.
+            ball.addEventListener("MSAnimationEnd", function (e) {
+                button.disabled = false;
+                ball.classList.remove("animate");
+                pooltable.classList.remove("animate");
+                messageLabel.innerHTML += "Animation <b>" +  e.animationName + "</b> ended, elapsed time " + e.elapsedTime + " seconds.<br>";
+            }, false);
+        }
+
+
+        // Start the ball animation.
+        function startAnimation() {
+            button.disabled = true;
+            ball.classList.add("animate");
+        }
+
+    </script>
+
+</head>
+
+<body onload="init()">
+    <div id="pooltable">
+        <div id="ball"></div>
+    </div>
+
+    <button id="button" onclick="startAnimation()">Start Animation</button>
+
+    <div id="messageLabel"></div>
+</body>
+</html>
+

@@ -1,0 +1,12 @@
+body{ 
+h1, h2, h3, h4, h5, h6 {
+font-family: segoe;
+font-size: 50px;
+font-weight : bold !important;
+}
+p {
+font-family: Candara;
+font-size: 26px;
+font-weight : bold !important;
+}
+}

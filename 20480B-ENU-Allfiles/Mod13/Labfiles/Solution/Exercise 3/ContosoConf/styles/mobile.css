@@ -1,0 +1,33 @@
+/* Styles for smaller browsers e.g. phones and tablets */
+
+@media screen and (max-width: 480px) {
+    nav.page-nav .container {
+        display: -ms-flexbox;
+        -ms-flex-wrap: wrap;
+        -ms-flex-pack: center;
+    }
+
+    nav.page-nav .active:before,
+    nav.page-nav .active:after {
+        display: none;
+    }
+
+    nav.page-nav a {
+        border: 1px dotted #3d3d3d;
+        margin: .5rem;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    header.page-header {
+        height: auto;
+    }
+
+    header.page-header .register {
+        display: none;
+    }
+
+    header.page-header h1 {
+        font-size: 3rem;
+    }
+}

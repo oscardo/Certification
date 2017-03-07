@@ -1,0 +1,41 @@
+/* Styles for the page header */
+
+header.page-header {
+    height: 20rem;
+    border-bottom: 4px solid #1d1d1d;
+}
+
+header.page-header .container {
+    padding: 1rem;
+    position: relative;
+}
+
+header.page-header h1 {
+    margin: 0;
+    font-size: 6rem;
+    padding-top: 3rem;
+}
+
+header.page-header p {
+    font-size: 2rem;
+    font-style: italic;
+}
+
+/* TODO: header.page-header .register */
+header.page-header .register {
+
+}
+
+/* TODO: header.page-header .register:hover */
+header.page-header .register:hover {
+
+}
+
+/* TODO: header.page-header .register:before */
+header.page-header .register:before {
+
+}
+
+header.page-header .register .free {
+    font-size: 80%;
+}

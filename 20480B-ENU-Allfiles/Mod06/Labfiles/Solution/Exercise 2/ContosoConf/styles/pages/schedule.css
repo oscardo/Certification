@@ -1,0 +1,19 @@
+/* Style for the schedule page */
+
+.star {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+    background-image: url(../images/stars.png);
+    background-position: 0 0;
+}
+
+.star:hover {
+    background-position: 0 -15px;
+}
+
+.starred .star,
+.starred .star:hover {
+    background-position: 0 -30px;
+}

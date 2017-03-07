@@ -1,0 +1,27 @@
+/* Styles for the register page */
+
+.register form {
+    max-width: 40rem;    
+}
+
+.register .field {
+    margin-bottom: 1rem;
+}
+
+.register label {
+    display: block;
+}
+
+.register input {
+    display: block;
+    padding: .5rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.register button {
+    padding: .5rem;
+}
+
+/* TODO: Task 5
+   Set invalid input elements background color to #f9b2b2, when the form has the "submission-attempted" class */

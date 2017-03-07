@@ -1,0 +1,35 @@
+-- header --
+
+ContosoConf
+A two-track conference on the latest HTML5 developments
+
+
+-- content --
+
+The web keeps evolving. There's a wealth of new technologies to keep up with! ContosoConf is an in-depth exploration of HTML5, CSS3 and JavaScript, in the heart of Seattle, WA.
+Don't miss the best speakers in the business, talking about the future of the web.
+
+Featuring these excellent speakers
+Melissa Kerr
+David Alexander
+Mark Hanson
+April Meyer
+
+Thanks to our sponsors
+Trey Research
+Litware, Inc
+Fourth Coffee
+Graphic Design Institute
+Southridge Video
+
+
+-- footer --
+
+Hosted by Contoso
+
+Conference Center
+1234 Main Street
+Seattle
+WA 98999
+
+© 2012 Contoso
